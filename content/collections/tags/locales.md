@@ -46,6 +46,14 @@ You can loop through in each locale to get URLs to translated versions of an ent
 </ul>
 ```
 
+If you're not sure if the content exists in other languages yet or want to configure the design based on different amounts, you can also count the locales.
+
+```
+{{ if {locales:count} > 1 }}
+  // Iterate locales
+{{ /if }}
+```
+
 ### Targeting a locale {#targeting}
 
 You can also specify a locale directly instead of looping through them all.
